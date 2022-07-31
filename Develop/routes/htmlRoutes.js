@@ -5,7 +5,7 @@ router.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/notes.html'));
 });
 
-//ALL other routes respond with teh index.html file
+//ALL other routes respond with the index.html file
 router.get('*', (req, res) => {
     res.json('post!');
 });
